@@ -83,7 +83,7 @@ const Home = () => {
                         </Link>
                     </div>
                     <div style={{width:'70%', color:'#ffffff'}} className='pd-10'>
-                        <h4>{list.name}</h4>
+                        <h4>{list.PprojectName}</h4>
                         <h4>{list.type}</h4>
                         <h4>內容描述</h4>
                         <h4>Creator ID: {list.creatorID}</h4>
