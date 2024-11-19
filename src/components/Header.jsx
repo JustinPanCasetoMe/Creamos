@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FaBell } from "react-icons/fa";
-import { FaBoltLightning } from "react-icons/fa6";
+import { FaBell, FaRegSmile, FaMailBulk } from "react-icons/fa";
 import Carousel from './Carousel'
 
 const Header = () => {
@@ -10,7 +9,7 @@ const Header = () => {
       <header className='fw '>
         <div className='df jc-sb aln-itm-c'>
           <div className='Logo df aln-itm-c'>
-            <Link to='/' className='mg-r-20'>
+            <Link to='/Creamos/' className='mg-r-20'>
               {/* <img src="" alt="" /> */}
               <div style={{width:'200px', height:'100px', backgroundColor:'grey'}}></div>
             </Link>
@@ -18,13 +17,13 @@ const Header = () => {
           </div>
           <ul className='df jc-sb pd-20' style={{width:'12%'}}>
             <li>
-              <Link><FaBell size={40} /></Link>
+              <Link><FaMailBulk size={40} /></Link>
             </li>
             <li>
               <Link><FaBell size={40} /></Link>
             </li>
             <li>
-              <Link><FaBell size={40} /></Link>
+              <Link to='/Creamos/profile'><FaRegSmile size={40} /></Link>
             </li>
           </ul>
         </div>

@@ -15,7 +15,7 @@ const Menu = ({onMenuItem}) => {
   ]
 
   const [menuItem, setMenuItem] = useState('lyricsCmos')
-  console.log(menuItem)
+  console.log("menuItem = ", menuItem)
 
   const menuItemRender = menuItems.map((menu, index) => {
     return(
