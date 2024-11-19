@@ -36,12 +36,18 @@ const Home = () => {
                         <h3>作品列表</h3>
                     </Link>
                 </div>
-                <div className='df jc-sb' style={{width:'70%'}}>
-                    <select name="" id=""></select>
-                    <select name="" id=""></select>
-                    <select name="" id=""></select>
-                    <input type="text" />
-                    <input type="button" value='搜尋'/>
+                <div className='df jc-fe' style={{width:'70%'}}>
+                    <select name="" id="" className='mg-r-20'>
+                        <option value="">是否付費？</option>
+                    </select>
+                    <select name="" id="" className='mg-r-20'>
+                        <option value="">語言（可複選）</option>
+                    </select>
+                    <select name="" id="" className='mg-r-20'>
+                        <option value="">地點（可複選）</option>
+                    </select>
+                    <input type="text" value='種類' className='mg-r-20'/>
+                    <input type="button" value='搜尋' className='pd-w-10'/>
                 </div>
             </div>
         )
