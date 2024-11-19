@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import { FaRegSmile, FaMailBulk } from "react-icons/fa";
+import { Link, useParams } from 'react-router-dom'
+import { FaRegSmile } from "react-icons/fa";
 import Menu from '../components/Menu'
 import projectList from '../datas/projectList.json'
 
@@ -12,6 +12,10 @@ const Home = () => {
     const handleMenuItemChange = (newMenuItem) => {
         setMenuItem(newMenuItem)
     }
+    const {Creator} = useParams()
+
+    console.log('Creator = ', Creator)
+
 
     const tabRender = () => {
         return(
@@ -74,15 +78,15 @@ const Home = () => {
                 </div>
                 <div className='df jc-sb aln-itm-c'>
                     <div style={{width:'25%'}}>
-                        <Link to={`/Creamos/Creator-${list.creatorID}`}>
+                        <Link to={`/Creamos/profile/${list.creatorID}`}>
                             <FaRegSmile size={80} color='#ffffff'/>
                         </Link>
                     </div>
                     <div style={{width:'70%', color:'#ffffff'}} className='pd-10'>
-                        <h4>合作專案名稱</h4>
-                        <h4>類型</h4>
+                        <h4>{list.name}</h4>
+                        <h4>{list.type}</h4>
                         <h4>內容描述</h4>
-                        <h4>創作者代號</h4>
+                        <h4>Creator ID: {list.creatorID}</h4>
                     </div>
                 </div>
             </div>

@@ -12,7 +12,8 @@ function App() {
       <Header />  
       <Routes>
         <Route path='/Creamos/' element={<Home />} />
-        <Route path='/Creamos/profile-:Creator' element={<Profile />} />
+        <Route path='/Creamos/profile/:Creator' element={<Profile />} />
+        <Route path='/Creamos/profile/user' element={<Profile />} />
       </Routes>
       {/* <Footer /> */}
     </div>
