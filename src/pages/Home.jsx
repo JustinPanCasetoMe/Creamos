@@ -3,8 +3,11 @@ import { Link, useParams } from 'react-router-dom'
 import { FaRegSmile } from "react-icons/fa";
 import Menu from '../components/Menu'
 import projectList from '../datas/projectList.json'
+import Unavailable from './Unavailable';
 
 const Home = () => {
+
+    const ScreenWidth = window.innerWidth
 
     const [menuItem, setMenuItem] = useState(null)
     const [tabItem, setTabItem] = useState('cooperation')
@@ -102,30 +105,37 @@ const Home = () => {
 
 
     return (
-        <div>
-            <Menu onMenuItem={handleMenuItemChange}/>
-            {tabRender()}
-            <div className='df jc-fe'>
-                <button className='pd-10 mg-b-30'>新增合作專案</button>
+        <>
+            <div className={`${375<ScreenWidth && ScreenWidth<=425 ? 'dn' : '' }`}>
+                <Menu onMenuItem={handleMenuItemChange}/>
+                {tabRender()}
+                <div className='df jc-fe'>
+                    <button className='pd-10 mg-b-30'>新增合作專案</button>
+                </div>
+
+                {/* 合作專案 */}
+                <div
+                    className={`df pd-10 mg-b-20 cooperateContent  ${tabItem=='cooperation' ? '' : 'dn'}`}
+                    style={{color:'#000000'}}
+                >
+                    {cooperateRender()}
+                </div>
+
+                {/* 作品列表 */}
+                <div
+                    className={`df jc-sb fl-wp  ${tabItem=='projectList' ? '' : 'dn'}`}
+                    style={{color:'#000000'}}
+                >
+                    {projectListRender}
+                </div>
+
             </div>
 
-            {/* 合作專案 */}
-            <div
-                className={`df pd-10 mg-b-20 cooperateContent  ${tabItem=='cooperation' ? '' : 'dn'}`}
-                style={{color:'#000000'}}
-            >
-                {cooperateRender()}
+            <div className={`${375<ScreenWidth && ScreenWidth<=425 ? '' : 'dn'}`}>
+                <Unavailable />
             </div>
-
-            {/* 作品列表 */}
-            <div
-                className={`df jc-sb fl-wp  ${tabItem=='projectList' ? '' : 'dn'}`}
-                style={{color:'#000000'}}
-            >
-                {projectListRender}
-            </div>
-
-        </div>
+        
+        </>
     )
 }
 

@@ -7,9 +7,13 @@ import Profile from './pages/Profile'
 
 function App() {
 
+  const ScreenWidth = window.innerWidth
+
   return (
     <div>
-      <Header />  
+      <div className={`${375<ScreenWidth && ScreenWidth<=425 ? 'dn' : '' }`}>
+        <Header />  
+      </div>
       <Routes>
         <Route path='/Creamos/' element={<Home />} />
         <Route path='/Creamos/profile/:Creator' element={<Profile />} />
