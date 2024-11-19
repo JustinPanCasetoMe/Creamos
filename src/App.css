@@ -44,12 +44,15 @@
 }
 
 .menuItemActive{
-  /* border-bottom: 2px solid rgba(253, 248, 0, 1); */
   color: rgba(253, 248, 0, 1);
 }
 
 .tabItemActive{
   border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.cooperateContent{
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* Font, Letter */
@@ -140,6 +143,10 @@
 }
 
 /* Margin */
+.mg-r-10{
+  margin-right: 10px;
+}
+
 .mg-r-20{
   margin-right: 20px;
 }
@@ -214,6 +221,7 @@
 }
 
 .bd-bt-active{
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
 }
 

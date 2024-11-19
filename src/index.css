@@ -28,6 +28,11 @@ a {
 }
 
 a:hover {
+  cursor: pointer;
+}
+
+button{
+  cursor: pointer;
 }
 
 body {
@@ -52,9 +57,25 @@ select{
 
 h1 {
   font-size: 3.2em;
+}
+
+h1 {
+  font-size: 3.2em;
   line-height: 1.1;
 }
 
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+img{
+  width: 100%;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
