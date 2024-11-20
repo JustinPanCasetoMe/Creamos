@@ -1,0 +1,10 @@
+[
+    { "character" : "作詞者", "id": "1"},
+    { "character" : "作曲者", "id": "2"},
+    { "character" : "故事創作者", "id": "3"},
+    { "character" : "歌手", "id": "4"},
+    { "character" : "樂手", "id": "5"},
+    { "character" : "動畫師", "id": "6"},
+    { "character" : "影視/MV創作者", "id": "7"},
+    { "character" : "音樂創作者", "id": "8"}
+  ]
