@@ -1,0 +1,10 @@
+[
+    { "menu" : "作詞者星系", "id": "lyricsCmos"},
+    { "menu" : "作曲者星系", "id": "compriseCmos"},
+    { "menu" : "故事創作者星系", "id": "storyCmos"},
+    { "menu" : "歌手星系", "id": "singerCmos"},
+    { "menu" : "樂手星系", "id": "bandCmos"},
+    { "menu" : "動畫師星系", "id": "AnimatorCmos"},
+    { "menu" : "影視/MV創作星系", "id": "visualCmos"},
+    { "menu" : "音樂創作星系", "id": "musicCmos"}
+  ]
