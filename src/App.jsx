@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Profile from './pages/Profile'
+import AddProject from './pages/AddProject'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/Creamos/' element={<Home />} />
         <Route path='/Creamos/profile/:Creator' element={<Profile />} />
         <Route path='/Creamos/profile/user' element={<Profile />} />
+        <Route path='/Creamos/addProject' element={<AddProject />} />
       </Routes>
       {/* <Footer /> */}
     </div>

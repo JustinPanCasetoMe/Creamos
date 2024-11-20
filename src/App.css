@@ -131,7 +131,7 @@
 }
 
 .pd-w-10{
-  padding: 0 10px;
+  padding: auto 10px;
 }
 
 .pd-w-20{
@@ -143,7 +143,7 @@
 }
 
 .pd-y-10{
-  padding: 10px 0;
+  padding: 10px auto;
 }
 
 .pd-b-title{
@@ -260,10 +260,11 @@
 /* .bd-r{
   border-radius: 6px;
 }
+*/
 
 .bd-r-sm{
-  border-radius: 6px;
-} */
+  border-radius: 4px;
+} 
 
 /* Display */
 .dib{

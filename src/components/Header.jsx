@@ -15,14 +15,14 @@ const Header = () => {
             </Link>
             <h2>使用說明</h2>
           </div>
-          <ul className='df jc-sb pd-20' style={{width:'12%'}}>
-            <li>
+          <ul className='df jc-sb pd-20' style={{width:'18%'}}>
+            <li className=''>
               <Link><FaEnvelope size={40} /></Link>
             </li>
-            <li>
+            <li className=''>
               <Link><FaBell size={40} /></Link>
             </li>
-            <li>
+            <li className=''>
               <Link to='/Creamos/profile/2534'><FaRegSmile size={40} /></Link>
             </li>
           </ul>

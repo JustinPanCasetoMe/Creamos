@@ -10,17 +10,6 @@ import typeList from '../datas/menuList.json'
 
 const Home = () => {
 
-    const menuItems = [
-        { 'menu' : '作詞者星系', 'id': 'lyricsCmos'},
-        { 'menu' : '作曲者星系', 'id': 'compriseCmos'},
-        { 'menu' : '故事創作者星系', 'id': 'storyCmos'},
-        { 'menu' : '歌手星系', 'id': 'singerCmos'},
-        { 'menu' : '樂手星系', 'id': 'bandCmos'},
-        { 'menu' : '動畫師星系', 'id': 'AnimatorCmos'},
-        { 'menu' : '影視/MV創作星系', 'id': 'visualCmos'},
-        { 'menu' : '音樂創作星系', 'id': 'musicCmos'},
-      ]
-
     const ScreenWidth = window.innerWidth
 
     const [menuItem, setMenuItem] = useState(null)
@@ -146,7 +135,8 @@ const Home = () => {
                 <Menu onMenuItem={handleMenuItemChange}/>
                 {tabRender()}
                 <div className='df jc-fe'>
-                    <button className='pd-10 mg-b-30'>新增合作專案</button>
+                    <Link to='/Creamos/addProject' className='pd-10 mg-b-30 bd-r-sm' style={{backgroundColor:'var(--buttonBG)'}}>新增合作專案</Link>
+                    {/* <button className='pd-10 mg-b-30'>新增合作專案</button> */}
                 </div>
 
                 {/* 合作專案 */}
