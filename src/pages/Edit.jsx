@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FaRegSmile } from "react-icons/fa";
 import languageList from '../datas/language.json'
 import characterList from '../datas/character.json'
+import userList from '../datas/users.json'
 
 const Edit = () => {
 
@@ -85,54 +86,71 @@ const Edit = () => {
                         <th style={{width:'22%'}}><h2>連結單一作品（可不連結）</h2></th>
                     </tr>
                 </thead>
-                <tbody>
-                    {Array.from({length: recruitMemeberRow}, (_, index) => index+1).map((item, index) => {
-                        return(
-                            <tr key={index}>
-                                <th className='df aln-itm-c'>
-                                    <FaRegSmile size={40} className='mg-r-20'/>
-                                    <h4>用戶ID</h4>
-                                </th>
-                                <td className='pd-r-20'>
-                                    <h4>參與角色：</h4>
-                                    <select name="" id="" style={{height:'24px'}}>
-                                        {characterList.map((character, index) => {
-                                            return(
-                                                <option value={character.character} key={index}>{character.character}</option>
-                                            )
-                                        })}
-                                    </select>
-                                </td>
-                                <td className='pd-r-20'>
-                                    <h4>角色種類：</h4>
-                                    <select name="" id="" style={{height:'24px'}}>
-                                        {characterList.map((character, index) => {
-                                            return(
-                                                <option value={character.character} key={index}>{character.character}</option>
-                                            )
-                                        })}
-                                    </select>
-                                </td>
-                                <td className='pd-r-20'>
-                                    <textarea name="" id="" style={{resize: 'vertical'}} className='fw pd-10' />
-                                </td>
-                                <td className='pd-r-20'>
-                                    <button className='pd-10 mg-r-30'>+</button>
-                                </td>
-                            </tr>
-                        )
-                    })}
-                </tbody>
+                    <tbody>
+                        {Array.from({length: recruitMemeberRow}, (_, index) => index+1).map((item, index) => {
+                            return(
+                                <tr key={index}>
+                                    <th className='df aln-itm-c'>
+                                        <FaRegSmile size={40} className='mg-r-20'/>
+                                        <h4>用戶ID</h4>
+                                    </th>
+                                    <td className='pd-r-20'>
+                                        <h4>參與角色：</h4>
+                                        <select name="" id="" style={{height:'24px'}}>
+                                            {characterList.map((character, index) => {
+                                                return(
+                                                    <option value={character.character} key={index}>{character.character}</option>
+                                                )
+                                            })}
+                                        </select>
+                                    </td>
+                                    <td className='pd-r-20'>
+                                        <h4>角色種類：</h4>
+                                        <select name="" id="" style={{height:'24px'}}>
+                                            {characterList.map((character, index) => {
+                                                return(
+                                                    <option value={character.character} key={index}>{character.character}</option>
+                                                )
+                                            })}
+                                        </select>
+                                    </td>
+                                    <td className='pd-r-20'>
+                                        <textarea name="" id="" style={{resize: 'vertical'}} className='fw pd-10' />
+                                    </td>
+                                    <td className='pd-r-20'>
+                                        <button className='pd-10 mg-r-30'>+</button>
+                                    </td>
+                                </tr>
+                            )
+                        })}
+                    </tbody>
                 </table>
-                <button className='pd-10 mg-r-30' onClick={handleAddRole}>+ Add new role</button>
-                <input
-                    type="text"
-                    value={inputID}
-                    placeholder='請輸入參與者的用戶ＩＤ'
-                    className={`pd-10 ${searchUserID ? '' : 'dn'}`}
-                    onChange={(e) => setInputID(e.target.value)}
-                    onKeyDown={handleEnterKeyPress}
-                />
+                <div className='df'>
+                    <button className='pd-10 mg-r-30' onClick={handleAddRole}>+ Add new role</button>
+                    <input
+                        type="number"
+                        value={inputID}
+                        placeholder='請輸入參與者的用戶ＩＤ'
+                        className={`pd-10 mg-r-30 ${searchUserID ? '' : 'dn'}`}
+                        onChange={(e) => setInputID(e.target.value)}
+                        onKeyDown={handleEnterKeyPress}
+                    />
+                    <div>
+                        {userList.map((user, index) => {
+                            if(user.creatorID === inputID){
+                                return(
+                                    <div key={index}>
+                                        <div className='df aln-itm-c'>
+                                            <FaRegSmile size={20}/>
+                                            <h4>{user.creator}</h4>
+                                        </div>
+                                        <h4>Creator ID : {user.creatorID}</h4>
+                                    </div>
+                                )
+                            }
+                        })}
+                    </div>
+                </div>
             </div>
             <div className='df mg-b-30'>
                 <h3>封面上傳處（若不上傳會用作品連結預設封面）</h3>
