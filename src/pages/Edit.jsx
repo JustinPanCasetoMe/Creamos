@@ -39,11 +39,11 @@ const Edit = () => {
         <div>
             <div className='mg-b-30 df'>
                 <div className='mg-r-30'>
-                    <input type="radio" name="projectType" id="singleProject" />
+                    <input type="radio" name="projectType" id="singleProject" className='mg-r-10'/>
                     <label htmlFor="singleProject">單一作品</label>
                 </div>
                 <div>
-                    <input type="radio" name="projectType" id="complexProject" />
+                    <input type="radio" name="projectType" id="complexProject" className='mg-r-10'/>
                     <label htmlFor="complexProject">複合作品</label>
                 </div>
             </div>
