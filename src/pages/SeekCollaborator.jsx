@@ -43,7 +43,6 @@ const SeekCollaborator = () => {
                 </tr>
               </tbody>
           </table>
-          <button className='pd-10'>+  Add new row</button>
       </div>
       <div className='mg-b-30'>
         <div style={{width:'100%', height:'150px', backgroundColor:'var(--greyBG-02)'}} className='mg-b-10'></div>
