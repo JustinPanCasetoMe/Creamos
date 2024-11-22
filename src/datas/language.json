@@ -1,7 +1,7 @@
 [
     {"id": 1, "language": "英語"},
-    {"id": 2, "language": "西班牙語"},
-    {"id": 3, "language": "中文"},
+    {"id": 2, "language": "中文"},
+    {"id": 3, "language": "西班牙語"},
     {"id": 4, "language": "印地語"},
     {"id": 5, "language": "阿拉伯語"},
     {"id": 6, "language": "葡萄牙語"},
