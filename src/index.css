@@ -96,6 +96,10 @@ option{
   padding: 10px;
 }
 
+button{
+  padding: 10px 20px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

@@ -84,7 +84,7 @@ const AddProject = () => {
                 </div>
             </div>
             <div className='mg-b-30'>
-                <h2>作品語言（可複選）左品尚無語言者不需勾選</h2>
+                <h2>作品語言（可複選）作品尚無語言者不需勾選</h2>
                 <div className='df fl-wp'>
                     {languageList.map((language, index) => {
                         return(
@@ -103,9 +103,9 @@ const AddProject = () => {
                     }
                 </div>
             </div>
-            <div>
+            <div className='mg-b-30'>
                 <h2>合作專案內容描述</h2>
-                <textarea name="" id=""></textarea>
+                <textarea name="" id="" className='fw' style={{height:'100px', resize:'vertical'}}></textarea>
             </div>
             <div>
                 <h2>若此合作專案有製作中的作品，可按加號與此合作專案連結，可選擇數個單一作品或複合作品：</h2>
@@ -113,8 +113,10 @@ const AddProject = () => {
             </div>
         </div>
         <div className='df jc-c aln-itm-c'>
-            <button>儲存</button>
-            <button>完成送出</button>
+            <div className='df jc-sb' style={{width:'200px'}}>
+                <button>儲存</button>
+                <button>完成送出</button>
+            </div>
         </div>
     </div>
   )
