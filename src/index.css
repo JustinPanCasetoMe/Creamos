@@ -98,6 +98,9 @@ option{
 
 button{
   padding: 10px 20px;
+  background-color: var(--greyBG-02);
+  border: none;
+  border-radius: 3px;
 }
 
 @media (prefers-color-scheme: light) {
