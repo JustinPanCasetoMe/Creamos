@@ -93,10 +93,26 @@ const Home = () => {
                         <h3>內容描述</h3>
                     </div>
                     <div style={{backgroundColor:'#ffffff', width:'70%'}} className='pd-10'>
-                        <h3>徵</h3>
-                        <h3>徵</h3>
+                        <h3 style={{color:'red'}}>徵</h3>
+                        <h3>作曲者 藍調 2人</h3>
+                        <h3>付費夥伴 音樂製作 混音 1人</h3>
+                        <h3>#中文 #線上</h3>
                     </div>
-                
+                </Link>
+                <Link to={`/Creamos/seekCollaborator`} className='df pd-10 mg-b-20 cooperateContent' style={{color:'#000000'}}>
+                    <div
+                        style={{backgroundColor:'#ffffff', width:'30%'}}
+                        className={`mg-r-10 pd-10`}
+                    >
+                        <h3>合作專案名稱</h3>
+                        <h3>內容描述</h3>
+                    </div>
+                    <div style={{backgroundColor:'#ffffff', width:'70%'}} className='pd-10'>
+                        <h3 style={{color:'red'}}>徵</h3>
+                        <h3>作曲者 藍調 2人</h3>
+                        <h3>樂手 吉他 1人</h3>
+                        <h3>#中文 #線上</h3>
+                    </div>
                 </Link>
             </>
         )
