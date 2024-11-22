@@ -84,17 +84,20 @@ const Home = () => {
     const cooperateRender = () => {
         return(
             <>
-                <div
-                    style={{backgroundColor:'#ffffff', width:'30%'}}
-                    className={`mg-r-10 pd-10`}
-                >
-                    <h3>合作專案名稱</h3>
-                    <h3>內容描述</h3>
-                </div>
-                <div style={{backgroundColor:'#ffffff', width:'70%'}} className='pd-10'>
-                    <h3>徵</h3>
-                    <h3>徵</h3>
-                </div>
+                <Link to={`/Creamos/seekCollaborator`} className='df pd-10 mg-b-20 cooperateContent' style={{color:'#000000'}}>
+                    <div
+                        style={{backgroundColor:'#ffffff', width:'30%'}}
+                        className={`mg-r-10 pd-10`}
+                    >
+                        <h3>合作專案名稱</h3>
+                        <h3>內容描述</h3>
+                    </div>
+                    <div style={{backgroundColor:'#ffffff', width:'70%'}} className='pd-10'>
+                        <h3>徵</h3>
+                        <h3>徵</h3>
+                    </div>
+                
+                </Link>
             </>
         )
     }
@@ -140,10 +143,7 @@ const Home = () => {
                 </div>
 
                 {/* 合作專案 */}
-                <div
-                    className={`df pd-10 mg-b-20 cooperateContent  ${tabItem=='cooperation' ? '' : 'dn'}`}
-                    style={{color:'#000000'}}
-                >
+                <div className={`${tabItem=='cooperation' ? '' : 'dn'}`}>
                     {cooperateRender()}
                 </div>
 

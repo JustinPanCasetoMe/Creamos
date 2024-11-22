@@ -1,7 +1,23 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import characterList from '../datas/character.json'
 import locationList from '../datas/location.json'
 import languageList from '../datas/language.json'
+import axios from 'axios'
+
+const submitProjectData = async () => {
+    const data = getFormData(); // Collect all data from the form
+
+    try {
+        const response = await axios.post('https://your-backend-api.com/api/projects', data);
+
+        console.log('Project successfully submitted:', response.data);
+        // Handle success (e.g., show a message or redirect)
+    } catch (error) {
+        console.error('Error submitting project:', error);
+        // Handle error (e.g., show an error message to the user)
+    }
+};
 
 const AddProject = () => {
 
@@ -185,7 +201,9 @@ const AddProject = () => {
                 {/* 按加號與此合作專案連結 */}
                 <div className='df mg-b-30'>
                     <h2>若此合作專案有製作中的作品，可按加號與此合作專案連結，可選擇數個單一作品或複合作品：</h2>
-                    <button>+</button>
+                    <Link to='/Creamos/editPage'>
+                        <button>+</button>
+                    </Link>
                 </div>
             </div>
             <div className='df jc-c aln-itm-c'>
