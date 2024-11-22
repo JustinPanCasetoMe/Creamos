@@ -46,7 +46,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  padding: 100px 80px;
+  padding: 120px 80px;
   position: relative;
 }
 
@@ -81,11 +81,18 @@ h4 {
 }
 
 tr{
-  font-size: 16px;
+  padding-bottom: 20px;
+  height: 60px;
 }
 
 th{
   text-align: left;
+  vertical-align: top;
+}
+
+td{
+  vertical-align: top;
+  height: 30px;
 }
 
 img{
