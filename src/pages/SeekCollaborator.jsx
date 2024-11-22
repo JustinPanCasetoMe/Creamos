@@ -46,18 +46,18 @@ const SeekCollaborator = () => {
           <button className='pd-10'>+  Add new row</button>
       </div>
       <div className='mg-b-30'>
-        <div style={{width:'100%', height:'150px', backgroundColor:'#fff'}} className='mg-b-10'></div>
+        <div style={{width:'100%', height:'150px', backgroundColor:'var(--greyBG-02)'}} className='mg-b-10'></div>
         <div className='df'>
           <FaRocket size={40} className='mg-r-30'/>
           <FaRegPlusSquare size={40}/>
         </div>
       </div>
       <div className='mg-b-30'>
-        <div style={{width:'100%', height:'150px', backgroundColor:'#fff'}} className='mg-b-10'></div>
+        <div style={{width:'100%', height:'150px', backgroundColor:'var(--greyBG-02)'}} className='mg-b-10'></div>
       </div>
       <div className='mg-b-30'>
         <h2 className='mg-b-10'>參與者</h2>
-        <div style={{width:'100%', height:'150px', backgroundColor:'#fff'}} className='mg-b-10'></div>
+        <div style={{width:'100%', height:'150px', backgroundColor:'var(--greyBG-02)'}} className='mg-b-10'></div>
       </div>
       <div className='mg-b-30'>
         <h2 className='mg-b-10'>留言</h2>
