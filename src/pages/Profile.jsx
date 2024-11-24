@@ -23,11 +23,11 @@ const Profile = () => {
     setProjectHover(null)
   }
   
-  console.log("Creator = ", Creator)
-  console.log("projectHover = ", projectHover)
+  // console.log("Creator = ", Creator)
+  // console.log("projectHover = ", projectHover)
 
   const creatorRender = creatorList.map((list, index) => {
-    console.log(list.creator)
+    // console.log(list.creator)
     if(list.creatorID == Creator){
       return(
         <div
