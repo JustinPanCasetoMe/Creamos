@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaBell, FaRegSmile, FaEnvelope } from "react-icons/fa";
-import Carousel from './Carousel'
+import Marquee from 'react-fast-marquee';
+
+const marqueeText = "This is a place for those who want to share the artworks or get to know someone likes to make the music."
 
 const Header = () => {
 
@@ -102,9 +104,16 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        {/* <Carousel></Carousel> */}
       </header>
 
+      <div>
+        <Marquee
+          pauseOnHover={true}
+          speed={100}
+        >
+          <h2>{marqueeText}</h2>
+        </Marquee>
+      </div>
     </div>
     
   )
