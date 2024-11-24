@@ -84,7 +84,7 @@
   top: 100%;
   right: 0;
   width: 240px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(5px);
   color: #ffffff;
   z-index: 10;
